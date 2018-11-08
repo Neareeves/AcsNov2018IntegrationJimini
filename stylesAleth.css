@@ -66,13 +66,18 @@ header .grid-3 {
 	border-color: #AD4A2F;
 	padding: 5px;
 }
-.troisex img {
-	height: 250px;
+.pix {
+	max-height: 200px;
+
 	padding: 10px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+}
+.vachevskrik {
+	display: none;
+	overflow: hidden;
 }
 
 /**************barres et magasins**********/
@@ -126,10 +131,7 @@ form {
 }
 
 
-.vachevskrik {
-	display: none;
-	overflow: hidden;
-}
+
 /************** media q**********/
 @media all and (max-width: 750px) {
  .notreaventure {
@@ -137,8 +139,9 @@ form {
  }
  
 .troisex img {
-	height: 150px;
-	
+	max-height: 150px;
+	justify-self: center;
+	align-self: center;
 }
 .troisex {
 	grid-template-columns: repeat(1, 1fr) !important;
@@ -154,15 +157,19 @@ padding-bottom: 15px;
 /**************barres et magasins**********/
 .vachevskrik {
 	display: block;
+	max-width: 300px;
+	margin-right: auto;
+margin-left: auto;
 }
 .vachevskrikgrd {
 	display: none;
 	overflow: hidden;
 }
+
 .conteneurbarresetmagasin {
  	display: grid;
  	grid-template: 2fr 1fr 1fr / 1fr 1fr;
- 	
+ 	max-width: 350px;
 }
 #barresetmagasin {
 	margin-top: 20px;
@@ -225,5 +232,11 @@ grid-template-columns: repeat(3, 1fr) !important;
 padding-top: 20px;
 padding-bottom: 20px;
 }
-
+.vachevskrik {
+	display: block !important;
+}
+.vachevskrikgrd {
+	display: none !important;
+	overflow: hidden;
+}
 }
