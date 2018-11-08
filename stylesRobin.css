@@ -1,3 +1,4 @@
+
 #contact{
     background-color:#EED178;
     border: 3px;
@@ -6,14 +7,22 @@
     border-style:solid;
     margin-top:50px;
     margin-bottom:50px;
+    padding-top:20px;
+ 
+    font-weight: bold;
+    
     
 }
+.jeanmi{
+    padding-left:32px;
+}
 .gauche{
-    
+   
     justify-self:left;
 }
 .bouton{
     justify-self:right;
+    margin-top:10px;
     
  
     
@@ -29,9 +38,10 @@
     
     
 }
+
 .carrefooter{
     /* background-color:blue; */
-    z-index: 1584848484;
+  
     
     margin-right:10%;
     margin-left:10%;
@@ -58,5 +68,9 @@ padding-top:30px;
     margin-bottom:30px;
 }
 @media all and (max-width: 750px) {
-
+    .actu{
+        height:96px;
+       
+    }
+   
 }
