@@ -6,7 +6,7 @@
 }
 
 body {
-	background-image: url(backgroundt.png);
+	background-image: url('backgroundt.png');
 	background-size: cover;
 	margin: 0;
 	padding:0; 
@@ -69,6 +69,7 @@ header .grid-3 {
  }
  .menuburger {
  	display: block;
- 	background-image: 
+ 	background-image: url(menuburger.jpg);
+ 	background-color: cover;
  }
 }
