@@ -1,22 +1,29 @@
+/******************général******************/
+
 @font-face {
 	font-family: 'Areno-Rough';
 	src: url('jiminycricket/Areno/Areno-Rough.otf');
 }
 
 body {
-	background-image: url(jiminycricket/backgroundt.png);
+	background-image: url(backgroundt.png);
 	background-size: cover;
 	margin: 0;
 	padding:0; 
 }
+
+/******************header******************/
+
 header h3 {
 	font-family: 'Areno-Rough';
 	color: #AD4A2F;
 	text-align: center;
 	margin-top: 75px;
 }
+
 header {
 }
+
 header .grid-3 {
 	background-color: #EED178;
 	margin-top: 25px;
@@ -26,17 +33,42 @@ header .grid-3 {
 	padding-bottom: 59px;
 
 }
+
+/******************première partie - trois exemples ******************/
+
 .troisex {
 	margin-top: 50px;
 	background-color: #EED178;
 	border-color: #AD4A2F;
 	border-style: solid;
+	grid-gap: 30px;
+	padding: 30px;
 }
 .troisex p {
 	font-family: 'Arial';
 	color: #AD4A2F;
 	font-size: 17px;
 }
-.troisex .has-gutter {
+/*.troisex .has-gutter {
 	grid-gap: 4rem;
+}*/
+.troisex > div {
+	margin: 20px;
+}
+.troisex img {
+	height: 30%;
+	padding: 10px;
+}
+
+
+
+/************** media q**********/
+@media all and (max-width: 750px) {
+ .notreaventure {
+ 	display: none;
+ }
+ .menuburger {
+ 	display: block;
+ 	background-image: 
+ }
 }
