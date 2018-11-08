@@ -169,7 +169,7 @@ margin-left: auto;
 .conteneurbarresetmagasin {
  	display: grid;
  	grid-template: 2fr 1fr 1fr / 1fr 1fr;
- 	max-width: 350px;
+ 	/*max-width: 350px;*/
 }
 #barresetmagasin {
 	margin-top: 20px;
@@ -233,10 +233,14 @@ padding-top: 20px;
 padding-bottom: 20px;
 }
 .vachevskrik {
-	display: block !important;
+	display: block;
+	max-width: 300px;
+	margin-right: auto;
+margin-left: auto;
 }
 .vachevskrikgrd {
-	display: none !important;
+	display: none;
 	overflow: hidden;
-}
+	}
+
 }
