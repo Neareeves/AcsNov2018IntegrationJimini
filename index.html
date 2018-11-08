@@ -55,23 +55,26 @@
 
 			FORMULAIRE DE CONTACT:<br>
 			<form >
-				<div>
-					<label for="name">PRÉNOM</label>
-					<input type="text" id="name" name="user_name">
-				</div>
-				<div>
-					<label for="firstname">NOM :</label>
-					<input type="text" id="mail" name="user_firstname">
-				</div>
-				<div>
-					<label for="mail">EMAIL:</label>
-					<textarea id="email" name="user_mmail"></textarea>
-				</div>
+				<div class="col-3">
+					<div class="col-1">
+						<label for="name">PRÉNOM</label>
+						<input type="text" id="name" name="user_name">
+					</div>
+					<div class="col-1">
+						<label for="firstname">NOM :</label>
+						<input type="text" id="mail" name="user_firstname">
+					</div>
+					<div>
+						<label for="mail">EMAIL:</label>
+						<input id="email" name="user_mmail">
+					</div>
+			</div>
 				<br>
-				<div>
+				<div class="col-3">
 					<label for="msg">MESSAGE :</label>
-					<input type="text" id="mail" name="user_msg">
+					<textarea type="text" id="mail" name="user_msg"></textarea>
 				</div>
+
 			</form>
 		</section>
 	</div>
