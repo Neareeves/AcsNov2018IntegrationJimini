@@ -50,6 +50,7 @@ header .grid-3 {
 	font-size: 14px;
 	padding: 10px;
 	font-weight: 501;
+	font-stretch: ultra-expanded;
 
 }
 /*.troisex .has-gutter {
@@ -73,16 +74,52 @@ header .grid-3 {
 
 /**************barres et magasins**********/
 .conteneurbarresetmagasin {
-
+ 	display: grid;
+ 	grid-template: 1fr / 1fr 1fr 1fr ;
+ 	align-content: center;
+	background-color: #EED178;
+	border-color: #AD4A2F;
+	border-style: solid;
+}
+#barresetmagasin {
+	margin-top: 50px;
 }
 .imagebarres {
-	flex: 2;
+	padding-left: 15px;
+	grid-area: 1 / 1 / 1 / span 2;
 }
-#magasin {
+.magasin {
 	border: solid;
 	border-width: 1.5px;
 	border-color: #AD4A2F;
-	flex: 1;
+	justify-self: center;
+	align-self: center;
+	grid-area: 1 / 3 / 1 / 4;
+	font-family: 'Arial';
+	color: #AD4A2F;
+	padding-top: 30px;
+}
+.magasin * {
+	padding: 0 30px 25px 25px;
+}
+
+/************** form**********/
+#mail, #name, #email, textarea {
+	background-color: #EED178;
+	border-color: #AD4A2F;
+	border-style: solid;
+	border-width: 2px
+}
+
+.labelform {
+	text-align: left;
+	font-family: 'Areno-Rough';
+	color: #AD4A2F;
+	margin-left: 20px;
+}
+form {
+	font-family: 'Areno-Rough';
+	color: #AD4A2F;
 }
 /************** media q**********/
 @media all and (max-width: 750px) {
@@ -94,4 +131,58 @@ header .grid-3 {
  	background-image: url(menuburger.jpg);
  	background-color: cover;
  }
+.troisex img {
+	height: 150px;
+	
+}
+
+/**************barres et magasins**********/
+
+.conteneurbarresetmagasin {
+ 	display: grid;
+ 	grid-template: 2fr 1fr 1fr / 1fr 1fr;
+ 	
+}
+#barresetmagasin {
+	margin-top: 20px;
+}
+.imagebarres {
+	padding-left: 15px;
+	grid-area: 1 / 1 / 1 / span 2;
+}
+.magasin {
+	grid-area: 2 / 1 / 4 / 4;
+	grid-column-gap: 20px;
+	grid-row-gap: 10px;
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr ;
+	border: none;
+}
+
+.magasin * {
+	padding: 5px 25px 5px 25px;
+	border: solid;
+	font-family: 'Areno-Rough';
+	color: #AD4A2F;
+	justify-self: center;
+	align-self: center;
+	width: 200px;
+	/*height: 150px;*/
+	font-size: 27px;
+}
+
+.mag {
+	grid-area: 1 / 1/ 1/ 1;
+}
+.farine {
+	grid-area: 2 / 1/ 2/ 1;
+}
+.actu {
+	grid-area: 1 / 2/ 1/ 2;
+	padding: 25px 25px 25px 25px;
+}
+.futur {
+	grid-area: 2 / 2/  3/ 3;
+}
+
 }
