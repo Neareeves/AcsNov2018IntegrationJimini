@@ -18,7 +18,7 @@ header h3 {
 	font-family: 'Areno-Rough';
 	color: #AD4A2F;
 	text-align: center;
-	margin-top: 75px;
+	align-self: center;
 }
 
 header {
@@ -47,13 +47,16 @@ header .grid-3 {
 .troisex p {
 	font-family: 'Arial';
 	color: #AD4A2F;
-	font-size: 17px;
+	font-size: 14px;
 }
 /*.troisex .has-gutter {
 	grid-gap: 4rem;
 }*/
 .troisex > div {
 	margin: 20px;
+	border: solid;
+	border-width: 1.5px;
+	border-color: #AD4A2F;
 }
 .troisex img {
 	height: 30%;
