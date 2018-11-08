@@ -8,12 +8,17 @@
     margin-bottom:50px;
     
 }
+.gauche{
+    
+    justify-self:left;
+}
 .bouton{
     justify-self:right;
-    align-self: right;
+    
  
     
 }
+
 
 #footer{
     background-color:#EED178;
