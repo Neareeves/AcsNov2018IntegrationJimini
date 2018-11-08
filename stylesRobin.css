@@ -8,6 +8,12 @@
     margin-bottom:50px;
     
 }
+.bouton{
+    justify-self:right;
+    align-self: right;
+ 
+    
+}
 
 #footer{
     background-color:#EED178;
@@ -45,4 +51,7 @@ padding-top:30px;
     /* background-color:brown; */
     padding-top:30px;
     margin-bottom:30px;
+}
+@media all and (max-width: 750px) {
+
 }
