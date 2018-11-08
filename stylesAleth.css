@@ -33,7 +33,10 @@ header .grid-3 {
 	padding-bottom: 59px;
 
 }
-
+.menuburger {
+	display: none;
+	overflow: hidden;
+}
 /******************première partie - trois exemples ******************/
 
 .troisex {
@@ -63,13 +66,18 @@ header .grid-3 {
 	border-color: #AD4A2F;
 	padding: 5px;
 }
-.troisex img {
-	height: 250px;
+.pix {
+	max-height: 200px;
+
 	padding: 10px;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+}
+.vachevskrik {
+	display: none;
+	overflow: hidden;
 }
 
 /**************barres et magasins**********/
@@ -121,27 +129,47 @@ form {
 	font-family: 'Areno-Rough';
 	color: #AD4A2F;
 }
+
+
+
 /************** media q**********/
 @media all and (max-width: 750px) {
  .notreaventure {
  	display: none;
  }
- .menuburger {
- 	display: block;
- 	background-image: url(menuburger.jpg);
- 	background-color: cover;
- }
+ 
 .troisex img {
-	height: 150px;
-	
+	max-height: 150px;
+	justify-self: center;
+	align-self: center;
 }
-
+.troisex {
+	grid-template-columns: repeat(1, 1fr) !important;
+}
+.logo {
+	align-self: center;
+}
+.header {
+grid-template-columns: repeat(3, 1fr) !important;
+padding-top: 15px;
+padding-bottom: 15px;
+}
 /**************barres et magasins**********/
+.vachevskrik {
+	display: block;
+	max-width: 300px;
+	margin-right: auto;
+margin-left: auto;
+}
+.vachevskrikgrd {
+	display: none;
+	overflow: hidden;
+}
 
 .conteneurbarresetmagasin {
  	display: grid;
  	grid-template: 2fr 1fr 1fr / 1fr 1fr;
- 	
+ 	max-width: 350px;
 }
 #barresetmagasin {
 	margin-top: 20px;
@@ -185,4 +213,30 @@ form {
 	grid-area: 2 / 2/  3/ 3;
 }
 
+.menuburger  {
+	display: block;
+	width: 109px;
+}
+	.header {
+	padding-top: 10px;
+
+padding-bottom: 10px;
+}
+}
+
+
+@media all and (max-width: 475px) {
+.header {
+	display: grid !important;
+grid-template-columns: repeat(3, 1fr) !important;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+.vachevskrik {
+	display: block !important;
+}
+.vachevskrikgrd {
+	display: none !important;
+	overflow: hidden;
+}
 }
