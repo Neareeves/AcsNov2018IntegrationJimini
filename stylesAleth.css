@@ -48,6 +48,9 @@ header .grid-3 {
 	font-family: 'Arial';
 	color: #AD4A2F;
 	font-size: 14px;
+	padding: 10px;
+	font-weight: 501;
+	
 }
 /*.troisex .has-gutter {
 	grid-gap: 4rem;
@@ -57,10 +60,15 @@ header .grid-3 {
 	border: solid;
 	border-width: 1.5px;
 	border-color: #AD4A2F;
+	padding: 5px;
 }
 .troisex img {
-	height: 30%;
+	height: 250px;
 	padding: 10px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 
