@@ -112,12 +112,13 @@ header .grid-3 {
 }
 
 /************** form**********/
-#mail, #name, #email, textarea {
+#mail, #name, #email, textarea, button {
 	background-color: #EED178;
 	border-color: #AD4A2F;
 	border-style: solid;
 	border-width: 2px
 }
+
 
 .labelform {
 	text-align: left;
@@ -151,8 +152,8 @@ form {
 }
 .header {
 grid-template-columns: repeat(3, 1fr) !important;
-padding-top: 15px;
-padding-bottom: 15px;
+padding-top: 15px !important;
+padding-bottom: 15px !important;
 }
 /**************barres et magasins**********/
 .vachevskrik {
@@ -187,7 +188,7 @@ margin-left: auto;
 	border: none;
 }
 
-.magasin * {
+.magasin p {
 	padding: 5px 25px 5px 25px;
 	border: solid;
 	font-family: 'Areno-Rough';
@@ -219,8 +220,7 @@ margin-left: auto;
 }
 	.header {
 	padding-top: 10px;
-
-padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 }
 
@@ -229,8 +229,8 @@ padding-bottom: 10px;
 .header {
 	display: grid !important;
 grid-template-columns: repeat(3, 1fr) !important;
-padding-top: 20px;
-padding-bottom: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
 }
 .vachevskrik {
 	display: block;
@@ -242,5 +242,7 @@ margin-left: auto;
 	display: none;
 	overflow: hidden;
 	}
-
+.magasin p {
+	max-width: 160px;
+}
 }
