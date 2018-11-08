@@ -1,27 +1,37 @@
-#tst{
-    background-color:red;
+#footer{
+    background-color:#EED178;
+    border: 3px;
+    border-color: #AD4A2F;
     text-align: center;
-    height:200px;
-    margin-bottom:0px;
+    border-style:solid;
+    
+    
 }
-.wesh{
-    background-color:blue;
+.carrefooter{
+    /* background-color:blue; */
     z-index: 1584848484;
-    height: 100px;
+    
     margin-right:10%;
     margin-left:10%;
-    margin-top:50px;
+    font-weight: bold;
+    
+    color:#AD4A2F;
+    
  
 }
-.ui{
-
+.accueil{
+padding-top:30px;
 }
-.oe{
-    background-color:green;
+.contact{
+    /* background-color:green; */
+    padding-top:30px;
 }
-.rekt{
-    background-color:yellow;
+.mentions{
+    /* background-color:yellow; */
+    padding-top:30px;
 }
-.yolo{
-    background-color:brown;
+.politique{
+    /* background-color:brown; */
+    padding-top:30px;
+    margin-bottom:30px;
 }
