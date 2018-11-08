@@ -50,7 +50,7 @@ header .grid-3 {
 	font-size: 14px;
 	padding: 10px;
 	font-weight: 501;
-	
+
 }
 /*.troisex .has-gutter {
 	grid-gap: 4rem;
@@ -71,8 +71,19 @@ header .grid-3 {
 	display: block;
 }
 
+/**************barres et magasins**********/
+.conteneurbarresetmagasin {
 
-
+}
+.imagebarres {
+	flex: 2;
+}
+#magasin {
+	border: solid;
+	border-width: 1.5px;
+	border-color: #AD4A2F;
+	flex: 1;
+}
 /************** media q**********/
 @media all and (max-width: 750px) {
  .notreaventure {
